@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+	html{background-color:darkolivegreen}
+		iframe{border:none;
+			display:block;
+			margin:auto
+		}
+		#content {background-color: white;
+			margin:0 auto;}
+		p {text-align: center;}
+		
