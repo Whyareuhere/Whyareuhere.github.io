@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	
+<head>
+<meta charset="UTF-8">
+	<title>dietcalculator</title>
+	<link rel="stylesheet" href="CSS/dietcalculator.css">
+</head>
+
+<body>
+
+
+<iframe src="menu.html" height="130px" width="375px" title="menu" margin="0px" align="middle"></iframe>
+	<div id="content">
+		<h3>Fruit and Vegetable Consumption Calculator</h3>
+		<b>What is the fruit and vegetable consumption calculator?</b>
+		<p>There is much confusion about what counts as part of the daily recommended fruit and vegetable consumption. The fruit and vegetable consumption calculator is here to help you calculate the amount of daily fruit and vegetables a person should eat to be healthy! All values are calculated from the CDC dietary recommendations on fruits and vegetables.</p>
+		<br>
+		<b>How does it work?</b>
+		<p>This page will calculate the amount of fruits and vegetables you eat daily! For this calculator, servings are counted as cups of raw fruits or vegetables, to follow CDC and other nutrient guidelines and their base units of serving sizes.</p>
+		<p>For more information, please visit the links below:</p>
+		<br>
+		<a href="https://www.choosemyplate.gov/eathealthy/fruits">Choose My Plate - Fruits</a>
+		<br>
+		<br>
+		<a href="https://www.choosemyplate.gov/eathealthy/vegetables">Choose My Plate - Vegetables</a>
+		
+		
+		<div id="calculator">
+			<h3>Daily Fruit and Vegetable Consumption Calculator</h3>
+			<p>Input how many cups of each type you have daily below, then hit calculate to see if you meet the daily recommended servings!</p>
+			<br>
+			<br>
+			<form>
+			<fieldset>
+				<legend> Fruit Servings </legend>
+				Raw Fruits <br>			<input type="number" Id="frawfruits" min="0" required> <br>
+				Fresh Fruit Juice <br>		<input type="number" Id="ffreshfruitjuice" min="0" required> <br>
+				Dried Fruit <br>		<input type="number" Id="fdriedfruit" min="0" required> <br>
+			</fieldset>				
+			<br>
+			<br>
+			<fieldset>
+				<legend> Vegetable Servings </legend>
+				Raw Vegetables	<br>		<input type="number" Id="frawveg" min="0" required> <br>
+				Vegetable Juice	<br>		<input type="number" Id="fvegjuice" min="0" required> <br>
+				Dried Vegetables <br>		<input type="number" Id ="fdriedveg" min="0" required> <br> 
+		
+			</fieldset>
+				<br>
+				<input type="button" value = "Calculate!" onclick = "reload();">
+			</form>
+			
+			<br>
+			<br>
+			<p>Fruit servings calculated:</p>
+			<h2><span id="fruittotal"> </h2>
+			<br>
+			<p>Vegetable servings calculated:</p>
+			<h2><span id="vegtotal"> </h2>
+			<br>
+
+			
+		</div>
+
+	<script src="https://whyareuhere.github.io/Diet-Calculator/calculator.js"></script>
+
+	<div id="rollover" style='display: flex; justify-content: center;'>
+  	<a href="#">
+    		<img src="images/fruit_and_vegetable_1.jpg" onmouseover="this.src='images/fruit_and_vegetable_2.jpg'" onmouseout="this.src='images/fruit_and_vegetable_1.jpg'" />
+  	</a>
+	</div>
+	</div>
+</body>
+</html>
